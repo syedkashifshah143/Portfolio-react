@@ -26,19 +26,19 @@ const Navbar = () => {
 
         {/* Links for Desktop */}
         <div className='hidden md:flex md:space-x-6'>
-          <Link to='/' className='hover:bg-[#F39C12] hover:text-white transition duration-300 px-3 py-2 rounded'>
+          <Link to='/' className='hover:bg-[#1ABC9C] rounded-3xl hover:text-white transition duration-300 px-3 py-2'>
             Home
           </Link>
-          <Link to='/about' className='hover:bg-[#F39C12] hover:text-white transition duration-300 px-3 py-2 rounded'>
+          <Link to='/about' className='hover:bg-[#1ABC9C] rounded-3xl hover:text-white transition duration-300 px-3 py-2'>
             About Me
           </Link>
-          <Link to='/service' className='hover:bg-[#F39C12] hover:text-white transition duration-300 px-3 py-2 rounded'>
+          <Link to='/service' className='hover:bg-[#1ABC9C] rounded-3xl hover:text-white transition duration-300 px-3 py-2'>
             Services
           </Link>
-          <Link to='/project' className='hover:bg-[#F39C12] hover:text-white transition duration-300 px-3 py-2 rounded'>
+          <Link to='/project' className='hover:bg-[#1ABC9C] rounded-3xl hover:text-white transition duration-300 px-3 py-2'>
             Projects
           </Link>
-          <Link to='/contact' className='hover:bg-[#F39C12] hover:text-white transition duration-300 px-3 py-2 rounded'>
+          <Link to='/contact' className='hover:bg-[#1ABC9C] rounded-3xl hover:text-white transition duration-300 px-3 py-2'>
             Contact
           </Link>
         </div>
@@ -53,19 +53,19 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} bg-[#2C3E50]`}>
-        <Link to='/' onClick={closeMenu} className='block hover:bg-[#F39C12] hover:text-white transition duration-300 px-4 py-2'>
+        <Link to='/' onClick={closeMenu} className='block hover:bg-[#1ABC9C] rounded-3xl hover:text-white transition duration-300 px-4 py-2'>
           Home
         </Link>
-        <Link to='/about' onClick={closeMenu} className='block hover:bg-[#F39C12] hover:text-white transition duration-300 px-4 py-2'>
+        <Link to='/about' onClick={closeMenu} className='block hover:bg-[#1ABC9C] rounded-3xl hover:text-white transition duration-300 px-4 py-2'>
           About Me
         </Link>
-        <Link to='/service' onClick={closeMenu} className='block hover:bg-[#F39C12] hover:text-white transition duration-300 px-4 py-2'>
+        <Link to='/service' onClick={closeMenu} className='block hover:bg-[#1ABC9C] rounded-3xl hover:text-white transition duration-300 px-4 py-2'>
           Services
         </Link>
-        <Link to='/project' onClick={closeMenu} className='block hover:bg-[#F39C12] hover:text-white transition duration-300 px-4 py-2'>
+        <Link to='/project' onClick={closeMenu} className='block hover:bg-[#1ABC9C] rounded-3xl hover:text-white transition duration-300 px-4 py-2'>
           Projects
         </Link>
-        <Link to='/contact' onClick={closeMenu} className='block hover:bg-[#F39C12] hover:text-white transition duration-300 px-4 py-2'>
+        <Link to='/contact' onClick={closeMenu} className='block hover:bg-[#1ABC9C] rounded-3xl hover:text-white transition duration-300 px-4 py-2'>
           Contact
         </Link>
         
