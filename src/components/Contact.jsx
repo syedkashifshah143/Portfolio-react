@@ -16,7 +16,7 @@ const Contact = () => {
     const templateParams = {
       name,
       email,
-      message,
+      message: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     };
 
     emailjs
