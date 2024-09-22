@@ -137,7 +137,7 @@ const Contact = () => {
                 />
               </div>
               {success && (
-                <p className="text-green-500">Message sent successfully!</p>
+                <p className="text-white">Message sent successfully!</p>
               )}
               {error && <p className="text-red-500">{error}</p>}
               <motion.button
