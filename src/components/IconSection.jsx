@@ -49,7 +49,7 @@ const IconSection = () => {
             whileHover="hover"
             variants={iconAnimation}
           >
-            <Link to="https://www.linkedin.com/in/syed-kashif-shah-a917082a1/" target="_blank">
+            <Link to="https://www.linkedin.com/in/syedkashifshah143/" target="_blank">
               <FaLinkedinIn className="text-xl text-blue-700 hover:text-white" />
             </Link>
           </motion.div>

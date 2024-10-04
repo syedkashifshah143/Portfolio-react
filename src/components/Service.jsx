@@ -4,22 +4,18 @@ import { Link } from "react-router-dom";
 
 const services = [
   {
-    id: 1,
     title: "Web Design",
     description: "Crafting visually appealing and user-friendly websites that enhance user experience and engagement.",
   },
   {
-    id: 2,
     title: "Frontend Development",
     description: "Building responsive and interactive user interfaces that enhance user experience and engagement.",
   },
   {
-    id: 3,
     title: "Backend Development",
     description: "Creating robust server-side logic and database management to ensure seamless functionality and data processing.",
   },
   {
-    id: 4,
     title: "Full-Stack Development",
     description: "Delivering end-to-end solutions by integrating both frontend and backend technologies for a complete web experience.",
   },
@@ -39,9 +35,7 @@ const Service = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="text-right text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-400">
-                {service.id}
-              </div>
+              
               <h3 className="mt-2 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
                 {service.title}
               </h3>

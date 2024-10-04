@@ -1,19 +1,37 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import Typed from "typed.js";
 import Heroimage from "../assets/hero.png";
 import { Link } from "react-router-dom";
 import KashifShahCV from "../assets/KashifShahCV.pdf";
 import IconSection from "./IconSection";
 
 const Hero = () => {
+  const typedRef = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      strings: [
+        "Web Developer",
+        "Frontend Developer",
+        "Backend Developer",
+        "Full-Stack Developer",
+      ],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true,
+    };
+
+    const typed = new Typed(typedRef.current, options);
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   const handleOpenCV = (e) => {
     e.preventDefault();
     window.open(KashifShahCV, "_blank");
-  };
-
-  const iconAnimation = {
-    initial: { scale: 0 },
-    animate: { scale: 1, transition: { duration: 0.3, type: 'spring', stiffness: 300 } },
   };
 
   return (
@@ -43,15 +61,15 @@ const Hero = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1ABC9C] to-[#FFD700]">
               Syed Kashif Shah
             </span>
-            <span className="block text-2xl text-[#E1E1E1] mt-2">
-              Full-Stack Developer
-            </span>
+            <div className="flex justify-center">
+              <span className="typing text-3xl mt-4" ref={typedRef}></span>
+            </div>
           </div>
         </div>
       </motion.h1>
 
       <motion.div
-        className="max-w-3xl mx-auto p-6 rounded-lg shadow-lg mt-4"
+        className="max-w-3xl mx-auto p-4 rounded-lg shadow-lg mt-4"
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
@@ -90,7 +108,7 @@ const Hero = () => {
           Open CV
         </motion.button>
       </div>
-      <IconSection/>
+      <IconSection />
     </div>
   );
 };
